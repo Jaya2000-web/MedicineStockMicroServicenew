@@ -16,7 +16,7 @@ namespace MedicineStockMicroService.Controllers
     {
         public static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         //creating service layer interface object
-        private readonly IMedicineStockService iMedicineStock;
+        private  readonly IMedicineStockService iMedicineStock;
         public MedicineStockInformationController(IMedicineStockService iMedicineStock)
         {
             this.iMedicineStock = iMedicineStock;

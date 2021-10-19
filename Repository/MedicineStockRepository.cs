@@ -9,7 +9,7 @@ namespace MedicineStockMicroService.Repository
     public class MedicineStockRepository : IMedicineStockRepository
     {
         public static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-        private readonly List<MedicineStockDTO> MedicineStockInformation = new List<MedicineStockDTO>() {
+        private static readonly List<MedicineStockDTO> MedicineStockInformation = new List<MedicineStockDTO>() {
            new MedicineStockDTO
             {
                 Name = "Dolo 650",
