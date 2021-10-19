@@ -10,7 +10,7 @@ using log4net.Config;
 [assembly: log4net.Config.XmlConfigurator(ConfigFile = "Log4net.config", Watch = true)]
 namespace MedicineStockMicroService.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class MedicineStockInformationController : Controller
     {
