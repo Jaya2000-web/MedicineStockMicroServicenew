@@ -21,10 +21,10 @@ namespace MedicineStockMicroService.ServiceLayer
 
 
             log.Info("Medicine Stock requested");
-            var MedicineStockList = IMedicineStock.GetAll();
-            log.Info("Medicine Stock Retrieved");
-            return MedicineStockList.ToList();
-            
+            //var MedicineStockList = IMedicineStock.GetAll();
+            //log.Info("Medicine Stock Retrieved");
+            //return MedicineStockList.ToList();
+            return IMedicineStock.GetAll();
         }
 
         
